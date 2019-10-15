@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="../style/responsive.css" />
+    <link rel="stylesheet" href="../style/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style/animate.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/invoice.js"></script>
+
+    <title>Invoice</title>
+    <style>
+        .border {
+            border: 1px solid #474745 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w-50 mx-auto mt-3">
+        <div class="row">
+            <div class="col-md-3 d-flex border logo" style="height: 100px;">
+
+            </div>
+            <div class="col-md-9 border text-center">
+                <h2 class=" mt-3 school_name" style="text-transform: uppercase;"></h2>
+                <span class="tag-line"></span>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 border font-weight-bold py-1">
+                <span>STUDENT NAME:</span>
+            </div>
+            <div class="col-md-5 border py-1">
+                <span class="s_name"></span>
+            </div>
+            <div class="col-md-3 border font-weight-bold py-1">
+                <span>INVOICE NO.</span>
+            </div>
+            <div class="col-md-1 border py-1">
+                <span class="invoice-no"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 border font-weight-bold py-1">
+                <span>FATHER NAME:</span>
+            </div>
+            <div class="col-md-4 border py-1">
+                <span class="f_name"></span>
+            </div>
+            <div class="col-md-2 border font-weight-bold py-1">
+                <span>Date</span>
+            </div>
+            <div class="col-md-3 border py-1">
+                <span class="invoice-date"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 border font-weight-bold py-1">
+                <span>CLASS</span>
+            </div>
+            <div class="col-md-10 border py-1">
+                <span class="class"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5 border border-remove">
+
+            </div>
+            <div class="col-md-4 description font-weight-bold text-center border py-1">
+
+
+            </div>
+            <div class="col-md-3 fee font-weight-bold text-center border py-1">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5 border border-remove">
+
+            </div>
+            <div class="col-md-4 font-weight-bold text-center border py-1">
+                <span>Total</span>
+
+            </div>
+            <div class="col-md-3 font-weight-bold text-center border py-1">
+                <span class="amount"></span>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center border py-2">
+                <span class=" principal_sign"></span>
+                <p class="mb-1 principal_text"></p>
+            </div>
+            <div class="col-md-6 text-center border py-2">
+                <span class="director_sign"></span>
+                <p class="mb-1 director_text"></p>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 mb-3 border text-center font-weight-bold">
+                <span class="address"></span>
+            </div>
+        </div>
+        <div align="center">
+            <button class="btn btn-dark print">Print Page</button>
+        </div>
+    </div>
+</body>
+
+</html>

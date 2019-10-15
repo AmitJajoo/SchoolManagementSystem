@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="../style/responsive.css" />
+    <link rel="stylesheet" href="../style/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style/animate.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/admission.js"></script>
+
+    <title>Admission Slip</title>
+</head>
+
+<body>
+    <div id="dark" style="width:100%;">
+        <div class="container-fluid" style="width:70%;">
+            <table class="table table-bordered mt-5">
+                <tr>
+                    <td width="150" class="pic p-0"></td>
+                    <td colspan="3">
+                        <h2 class="text-center school_name"></h2>
+                        <p class="text-center school_tagline"></p>
+                        <div align="center">
+                            <button class="btn btn-light office_no"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Candidate Name</b></td>
+                    <td class="candidate_name"></td>
+                    <td width="150"><b>DOB</b></td>
+                    <td class="dob"></td>
+                </tr>
+                <tr>
+                    <td><b>Gender</b></td>
+                    <td class="gender"></td>
+                    <td width="150"><b>Admission Date</b></td>
+                    <td class="adm_date"></td>
+                </tr>
+                <tr>
+                    <td><b>Father's Name</b></td>
+                    <td class="f_name"></td>
+                    <td width="150"><b>Admitted In</b></td>
+                    <td class="admitted">School</td>
+                </tr>
+                <tr>
+                    <td><b>Mother's Name</b></td>
+                    <td colspan="3" class="m_name"></td>
+                </tr>
+                <tr>
+                    <td><b>Mobile Number</b></td>
+                    <td colspan="3" class="mobile_num"></td>
+                </tr>
+                <tr>
+                    <td><b>Address</b></td>
+                    <td colspan="3" class="address"></td>
+                </tr>
+            </table>
+
+            <div align="center">
+                <button class="btn btn-dark print">Print Document</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
